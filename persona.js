@@ -21,7 +21,7 @@ class Person {
     
     move() {
       if (this.enfermo) this.enfCount--;
-      if(this.enfCount == 0) {
+      if(this.enfermo && this.enfCount == 0) {
         this.dead = this.tryKill();
         if(!this.dead) this.cured = true;
         this.enfermo = false;
