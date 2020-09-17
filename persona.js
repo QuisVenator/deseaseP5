@@ -89,7 +89,7 @@ class Person {
         return random(0, 100) < 100*this.getDeadliness();
     }
     getDeadliness() {
-        return deadlySlider.value;
+        return deadlySlider.value();
     }
     getProbabilidadResponsable() {
         return responsableSlider.value();
